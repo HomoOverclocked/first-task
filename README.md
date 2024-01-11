@@ -72,3 +72,13 @@
 8. Хэш - основной идентификатор коммита. Для одного и того же набора данных, хешированных по одному и тому же алгоритму, хэш будет одинаковым
 	1. git log --one line автоматически подберет такое кол-во сокращенных символов хэш, чтобы их хватило для идентификации
 
+
+```mermaid
+%% описываем полный цикл файлов git
+graphLR;
+untracked --> "git add" --> staged;
+staged --> make changes --> modified;
+modified --> "git add" --> staged;
+staged --> "git commit" --> tracked;
+tracked --> make changes --> modified;
+
