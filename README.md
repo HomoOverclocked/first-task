@@ -81,4 +81,4 @@ staged --> make changes --> modified;
 modified --> "git add" --> staged;
 staged --> "git commit" --> tracked;
 tracked --> make changes --> modified;
-
+```
