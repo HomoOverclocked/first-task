@@ -75,10 +75,10 @@
 
 ```mermaid
 %% описываем полный цикл файлов git
-graphLR;
-untracked -- "git add" --> staged;
-staged -- make changes --> modified;
-modified -- "git add" --> staged;
-staged -- "git commit" --> tracked;
-tracked -- make changes --> modified;
+graph LR;
+	untracked -- "git add" --> staged;
+	staged -- make changes --> modified;
+	modified -- "git add" --> staged;
+	staged -- "git commit" --> tracked;
+	tracked -- make changes --> modified;
 ```
